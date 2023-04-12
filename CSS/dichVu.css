@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 1500px;
+    /* border: 1px solid #000; */
+}
+
+/* HEADER CSS */
+.header {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+/* NAV CSS */
+.nav {
+    width: 80%;
+    height: 80px;
+    margin: 10px auto;
+    background-color: #000;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-left li{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.nav-left li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-left li:hover a{
+    color: #E7B45A;
+}
+
+.sub-nav{
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(0, 0, 0.3);
+}
+
+.nav-left li:hover .sub-nav{
+    display: block;
+}
+
+.sub-nav li {
+   width: 200px;
+   background-color: #fff;
+   border: 1px solid #000;
+   list-style-type: none;
+   margin-left: 0;
+}
+.sub-nav li a{
+    text-decoration: none;
+    color: #000 !important;
+    margin-left: 10px;
+}
+
+.sub-nav li a:hover{
+    color: #E7B45A !important;
+}
+
+.nav-right{
+    margin-right: 40px;
+}
+
+.nav-right li{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 15px;
+}
+
+.nav-right li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-right li:hover a{
+    color: #E7B45A;
+}
+
+/* ICON RIGHT */
+.fa-bag-shopping {
+    position: absolute;
+    right: 40px;
+    top: 31px;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass {
+    color: #fff;
+    position: absolute;
+    right: 80px;
+    top: 31px;
+    cursor: pointer;
+}
+
+/* LOGO TEST */
+.logo {
+    width: 190px;
+    height: 190px;
+    background-color: #000;
+    border-radius: 100px;
+    position: absolute;
+    display: inline-block;
+    margin-left: 700px;
+    z-index: 2;
+    top: 10px;
+}
+
+.logo img {
+    position: absolute;
+    right: 26px;
+    top: 25px;
+
+}
+
+.nav .nav-mid {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+
+/* STAND CSS */
+.stand {
+    width: 100%;
+    height: 50px;
+    margin-left: 75px;
+}
+
+
+/* CONTENT */
+.content {
+    width: 90%;
+    height: 1100px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+
+/* CONTENT 1 */
+.content1 {
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+
+.content1-both {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content1-both h3:hover {
+    color: #E7B45A;
+    cursor: pointer;
+}
+
+.content1-right,
+.content1-left {
+    position: relative;
+}
+
+.content1-right .box,
+.content1-left .box {
+    width: 500px;
+    height: 150px;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+}
+
+.content1-both p,
+.content1-both h3 {
+    margin: 20px 10px;
+}
+
+.content1-both h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content1-both img:hover{
+    opacity: 0.5;
+}
+
+/* CONTENT 6 CSS  copy admin*/
+.content6 {
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid #000; */
+}
+
+.content6 h1 {
+    margin-bottom: 50px;
+}
+
+.content6-main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content6-main h3:hover {
+    color: #E7B45A;
+    cursor: pointer;
+}
+
+.content6-main img:hover{
+    opacity: 0.5;
+}
+
+.content6-main .text1,
+.content6-main .text2 {
+    margin-left: 15px;
+}
+
+.text1 h3,
+.text2 h3 {
+    margin: 15px 0;
+}
+
+.text1 h3:hover {
+    color: #E7B45A;
+    cursor: pointer;
+}
+
+.text2 h3:hover {
+    color: #E7B45A;
+    cursor: pointer;
+}
+
+/* CONTENT 7 CSS copy admin*/
+.content7 {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.content7 img {
+    margin-right: 20px;
+    line-height: 100px;
+}
+
+/* FOOTER CSS */
+.footer {
+    width: 100%;
+    height: 900px;
+    background-image: url('../IMAGE/bg_footer.png');
+    background-repeat: no-repeat;
+}
+
+.footer-both {
+    width: 100%;
+    position: relative;
+}
+
+.footer-left {
+    width: 50%;
+
+}
+
+.footer-left .map {
+    width: 400px;
+    height: 600px;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.footer-right {
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    color: #fff;
+}
+
+.footer-right-top {
+    margin-top: 150px;
+    margin-left: 63px;
+    margin-bottom: 90px;
+}
+
+.footer-right-top p {
+    color: #fff;
+}
+
+.footer-right-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-right ul,
+.bottom-left ul {
+    display: inline-block;
+}
+
+.bottom-right li,
+.bottom-left li {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.bottom-right a,
+.bottom-left a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-right-bottom ul li a:hover {
+    color: #E7B45A;
+}
+
+span {
+    color: #fff;
+    font-weight: bold;
+}
