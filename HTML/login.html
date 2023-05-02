@@ -6,13 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../IMAGE/AT08.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css"> -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> -->
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
     <script src="/js/jquery-3.6.4.js"></script>
-    <script src="/js/login.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <title>Login</title>
+
+    <script>
+        $(document).ready(function () {
+            $('#eye').click(function () {
+                $(this).toggleClass('open');
+                $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+                if ($(this).hasClass('open')) {
+                    $(this).prev().attr('type', 'text');
+                } else {
+                    $(this).prev().attr('type', 'password');
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
