@@ -23,16 +23,17 @@ html {
     margin: 10px auto;
 }
 
-.header-right li{
+.header-right li {
     list-style-type: none;
     display: inline-block;
 }
-.header-right a{
+
+.header-right a {
     color: #000;
     text-decoration: none;
 }
 
-.header-right a:hover{
+.header-right a:hover {
     color: #ccc;
 }
 
@@ -49,64 +50,66 @@ html {
     z-index: 1;
 }
 
-.nav-left li{
+.nav-left li {
     display: inline-block;
     line-height: 80px;
     margin-left: 15px;
     position: relative;
 }
 
-.nav-left li a{
+.nav-left li a {
     color: #fff;
     text-decoration: none;
 }
 
-.nav-left li:hover a{
+.nav-left li:hover a {
     color: #E7B45A;
 }
 
-.sub-nav{
+.sub-nav {
     display: none;
     position: absolute;
     box-shadow: 0 0 10px rgb(0, 0, 0.3);
 }
 
-.nav-left li:hover .sub-nav{
+.nav-left li:hover .sub-nav {
     display: block;
 }
 
 .sub-nav li {
-   width: 200px;
-   background-color: #fff;
-   border: 1px solid #000;
-   list-style-type: none;
-   margin-left: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #000;
+    list-style-type: none;
+    margin-left: 0;
 }
-.sub-nav li a{
+
+.sub-nav li a {
     text-decoration: none;
     color: #000 !important;
     margin-left: 10px;
 }
 
-.sub-nav li a:hover{
+.sub-nav li a:hover {
     color: #E7B45A !important;
 }
 
-.nav-right{
+.nav-right {
     margin-right: 40px;
 }
 
-.nav-right li{
+.nav-right li {
     display: inline-block;
     line-height: 80px;
     margin-left: 15px;
 }
 
-.nav-right li a{
+.nav-right li a {
     color: #fff;
     text-decoration: none;
 }
-.nav-right li:hover a{
+
+.nav-right li:hover a {
     color: #E7B45A;
 }
 
@@ -154,8 +157,8 @@ html {
 /* SLIDER */
 .slider img {
     width: 100%;
-} 
- 
+}
+
 
 
 
@@ -390,7 +393,7 @@ html {
     cursor: pointer;
 }
 
-.content6-main img:hover{
+.content6-main img:hover {
     opacity: 0.5;
     cursor: pointer;
 }
@@ -483,3 +486,163 @@ span {
     color: #fff;
     font-weight: bold;
 }
+
+/* RESPONSIVE */
+/* Mobile: width < 740px */
+@media (max-width: 740px) {
+    .header {
+        display: none;
+    }
+
+    .nav {
+        border-radius: 0px;
+        width: 100%;
+        height: 140px;
+        margin: 0;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    .stand {
+        margin-left: 30px;
+    }
+
+    .logo {
+        margin-left: 120px;
+        background-color: unset;
+        margin-top: -16px;
+    }
+
+    .logo img {
+        width: 106px;
+        height: 106px;
+    }
+
+    .content1 {
+        margin-top: 120px;
+        flex-direction: column;
+    }
+
+    .content1-left {
+        margin-left: 90px;
+    }
+
+    .content1-right {
+        margin-left: 50px;
+    }
+
+    .content1-right img {
+        width: 294px;
+        height: 150px;
+    }
+
+    .content2 .content2-top {
+        margin-top: 110px;
+    }
+
+    .content2 {
+        background-color: #F5F2EB;
+        height: 1900px;
+        background-image: none;
+    }
+
+    .content2-top ul {
+        display: none;
+    }
+
+    .content2-bottom {
+        flex-direction: column;
+    }
+
+    .content2-bottom-right p,
+    .content2-bottom-left p {
+        width: 300px;
+    }
+
+    .content3 {
+        margin-top: 100px;
+    }
+
+    .content4 h1{
+        font-size: 30px;
+    }
+    .content4 ul img{
+        width: 40px;
+        height: 40px;
+    }
+    .content5{
+        background-color: #F5F6F7;
+        background-image: none;
+    }
+    .content5-left{
+        width: 50%;
+        margin-left: 100px;
+    }
+    .content5-right{
+        width: 100%;
+        position: relative;
+    }
+    .content5-right h1{
+        font-size: 20px;
+    }
+    .content6{
+        margin-top: 500px;
+    }
+    .content6-main{
+        flex-direction: column;
+    }
+    .content6-main .img2 img{
+        margin-left: 0;
+    }
+    .content7{
+        margin-left: 50px;
+        margin-top: 900px;
+        flex-direction: column;
+    }
+    .content7 .ser1,
+    .content7 .ser2,
+    .content7 .ser3{
+        margin-top: 30px;
+    }
+    .footer {
+        margin-top: 2700px;
+        background-image: none;
+        background-color: #000;
+        height: 1000px;
+    }
+
+    .footer .map {
+        width: 360px;
+        height: 600px;
+        margin-top: 30px;
+    }
+
+    .footer-left {
+        margin-left: -285px;
+    }
+
+    .footer-right {
+        margin-right: 150px;
+        margin-top: 150px;
+    }
+
+    .footer-right-bottom {
+        display: none;
+    }
+
+    .footer-right-top {
+        margin-left: -21px;
+        margin-top: 450px;
+        display: block;
+        width: 350px;
+    }
+
+   
+
+}
+
+/* Tablet: width >= 740px and width <= 1024px*/
+@media (min-width: 740px)and(max-width: 1024px) {}
